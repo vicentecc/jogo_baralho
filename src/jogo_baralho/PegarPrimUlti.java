@@ -1,11 +1,26 @@
 package jogo_baralho;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PegarPrimUlti implements Jogada{
 
 	@Override
 	public ArrayList<Carta> pegarCartas(ArrayList<Carta> cartas) {
-		return null;
+		ArrayList<Carta> c = new ArrayList<Carta>();
+		ArrayList<Carta> cr = new ArrayList<Carta>();
+		c = cartas;
+		
+		// embaralhar as cartas
+		Collections.shuffle(c);
+		Carta carta1;
+		Carta carta2;
+		carta1 = c.get(0);
+		carta2 = c.get(c.size()-1);
+
+		cr.add(carta1);
+		cr.add(carta2);
+		return cr;
 	}
+
 
 }

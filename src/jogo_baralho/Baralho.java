@@ -8,6 +8,10 @@ public class Baralho {
 	public void addCarta(Carta c) {
 		cartas.add(c);
 	}
+	
+	public void removeCarta(Carta c){
+		cartas.remove(c);
+	}
 
 	public Carta pegarCarta(int pos) {
 		Carta cc = cartas.get(pos);
@@ -79,4 +83,11 @@ public class Baralho {
 		}
 		return ganhador;
 	}
+	 public String ler(ArrayList<Carta> crt){
+		 ArrayList<Carta> ct = crt;
+		 for(Carta c : ct){
+			 return c.toString();
+			}
+		return null;
+	 }
 }

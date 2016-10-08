@@ -1,6 +1,7 @@
 package jogo_baralho;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PegarDuasPrimeiras implements Jogada {
 
@@ -9,6 +10,9 @@ public class PegarDuasPrimeiras implements Jogada {
 		ArrayList<Carta> c = new ArrayList<Carta>();
 		ArrayList<Carta> cr = new ArrayList<Carta>();
 		c = cartas;
+		
+		// embaralhar as cartas
+		Collections.shuffle(c);
 		Carta carta1;
 		Carta carta2;
 		carta1 = c.get(0);
