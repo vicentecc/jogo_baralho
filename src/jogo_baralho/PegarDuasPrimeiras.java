@@ -13,6 +13,7 @@ public class PegarDuasPrimeiras implements Jogada {
 		
 		// embaralhar as cartas
 		Collections.shuffle(c);
+		
 		Carta carta1;
 		Carta carta2;
 		carta1 = c.get(0);

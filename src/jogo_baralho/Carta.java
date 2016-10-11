@@ -3,8 +3,7 @@ package jogo_baralho;
 public class Carta{
 	private String naipe;
 	private String valor;
-	private int valorInt;
-	private int naipeInt;
+
 	
 	public Carta(String naipe, String valor){
 		this.naipe = naipe;
@@ -30,10 +29,10 @@ public class Carta{
 		this.valor = valor;
 		
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Naipe: " + naipe + ", valor:" + valor;
+		return "Naipe: " + naipe + ", valor:" + valor + "\n";
 	}
 	
 }
